@@ -1,0 +1,853 @@
+//infoWrap
+.infoWrap {
+    width: 100%;
+    height: auto;
+    padding: 420px 0 50px;
+    position: relative;
+    z-index: 3;
+
+    //article
+    article {
+        width: 1000px;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+
+        //內容
+        .content {
+            width: 1000px;
+            height: auto;
+            background: $info_BG;
+            border: 1px solid $home_OuterBorder;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 2px $info_Shadow;
+            box-sizing: border-box;
+            padding: 30px 0 20px;
+            margin: 0 auto;
+
+            .title {
+                width: 100%;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                margin-bottom: 20px;
+
+                .ornament {
+                    width: 213px;
+                    height: 49px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+                p {
+                    color: $header_Word;
+                    font-size: 26px;
+                    font-weight: bold;
+                    filter: drop-shadow(0px 0px 10px #ff8854) contrast(200%);
+                }
+            }
+
+            //即時投注
+            .immediateBox {
+                width: 850px;
+                height: auto;
+                background: $info_innerBG;
+                box-shadow: 0 0 10px 2px $info_Shadow inset;
+                border: 0.1px solid $home_OuterBorder;
+                overflow: hidden;
+                margin: 0 auto 30px;
+
+                //即時回傳內容
+                .immInfo {
+                    width: 100%;
+                    height: auto;
+                    box-sizing: border-box;
+                    padding: 0 16px;
+
+                    //標頭
+                    .name {
+                        width: 100%;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+
+                        li {
+                            color: $info_immediate_Title;
+                            font-size: 20px;
+                            font-weight: bold;
+                            text-align: center;
+
+                            &:nth-of-type(1) {
+                                width: 19%;
+                            }
+                            &:nth-of-type(2) {
+                                width: 21%;
+                            }
+                            &:nth-of-type(3) {
+                                width: 19%;
+                            }
+                            &:nth-of-type(4) {
+                                width: 40%;
+                            }
+                        }
+                    }
+
+                    //內容
+                    .betBox {
+                        width: 100%;
+                        height: 695px;
+                        margin-bottom: 20px;
+                        overflow-y: auto;
+                        transition: 0.3s all;
+                        @include scrollBar_2;
+
+                        &.active {
+                            height: 1200px;
+                        }
+
+                        ul {
+                            width: 100%;
+                            height: auto;
+
+                            li {
+                                width: 100%;
+                                height: 58px;
+                                background: $info_innerBG2;
+                                box-shadow: 0 1px 3px 0 $info_Shadow;
+                                display: flex;
+                                margin-bottom: 5px;
+
+                                &:last-child {
+                                    margin: 0;
+                                }
+
+                                div {
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    &:nth-of-type(1),
+                                    &:nth-of-type(2) {
+                                        width: 20%;
+                                    }
+                                    &:nth-of-type(3) {
+                                        width: 20%;
+                                    }
+                                    &:nth-of-type(4) {
+                                        width: 40%;
+                                    }
+
+                                    p {
+                                        color: $mainWord_2;
+                                        font-size: 20px;
+                                        font-weight: bold;
+                                    }
+
+                                    span {
+                                        width: 45px;
+                                        height: 45px;
+                                        @include ballBtn;
+                                        font-size: 23px;
+                                        margin: 0 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    //按鈕區
+                    .btnBox {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 20px;
+                        position: relative;
+
+                        button {
+                            width: auto;
+                            min-width: 98px;
+                            height: 35px;
+                            @include redBtn;
+
+                            &.time {
+
+                                i {
+                                    display: block;
+                                    width: 12px;
+                                    height: 12px;
+                                    margin: 0 8px;
+                                }
+
+                                span {
+                                    width: 46px;
+                                    height: 22px;
+                                }
+                            }
+
+                            &.more {
+                                @include yellowBtn;
+                                position: absolute;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                display: none;
+
+                                &.display {
+                                    display: flex;
+                                }
+
+                                i {
+                                    display: block;
+                                    width: 11px;
+                                    height: 11px;
+                                    margin-left: 8px;
+
+                                    &.turn {
+                                        transform: scaleY(-1);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //開獎資訊
+            .lotteryBox {
+                width: 850px;
+                height: auto;
+                background: $info_innerBG;
+                box-shadow: 0 0 10px 2px $info_Shadow inset;
+                border: 0.1px solid $home_OuterBorder;
+                overflow: hidden;
+                margin: 0 auto 30px;
+
+                .outerBox {
+                    width: 100%;
+                    height: 378px;
+                    transition: 0.3s all;
+                    @include scrollBar_2;
+
+                    &.active {
+                        height: 800px;
+                        padding-bottom: 10px;
+                        overflow-y: auto;
+                    }
+
+                    //資訊欄
+                    .lottoInfo {
+                        width: 100%;
+                        height: auto;
+                        box-sizing: border-box;
+                        padding: 0 16px;
+                        display: none;
+
+                        &.display {
+                            display: block;
+                        }
+
+                        //開獎列
+                        .ballBox {
+                            width: 100%;
+                            height: auto;
+                            box-shadow: 0 2px 10px 0 $info_Shadow;
+                            margin-top: 16px;
+
+                            .smallTitle {
+                                width: 100%;
+                                height: 45px;
+                                background: $home_TitleBG;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 5px 5px 0 0;
+                                position: relative;
+            
+                                p {
+                                    color: $home_Title;
+                                    font-size: 20px;
+                                    font-weight: bold;
+                                }
+
+                                .download {
+                                    width: 24px;
+                                    height: 22px;
+                                    position: absolute;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    right: 20px;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            //主內容
+                            .lottoBox {
+                                width: 100%;
+                                height: auto;
+
+                                table {
+                                    width: 100%;
+                                    height: auto;
+                                    background: $info_innerBG2;
+
+                                    tr {
+                                        width: 100%;
+                                        height: 65px;
+                                        border-bottom: solid 1px $mainBorder_1;
+
+                                        &:last-child {
+                                            border: none;
+                                        }
+
+                                        th {
+                                            border-right: solid 1px $mainBorder_1;
+                                            vertical-align: middle;
+
+                                            &:last-child {
+                                                border: none;
+                                            }
+
+                                            p {
+                                                color: $mainWord_2;
+                                                font-size: 18px;
+                                                font-weight: bold;
+
+                                                &:last-child {
+                                                    margin-top: 5px;
+                                                }
+                                            }
+                                        }
+
+                                        td {
+                                            border-right: solid 1px $mainBorder_1;
+                                            vertical-align: middle;
+
+                                            &:last-child {
+                                                border: none;
+                                            }
+
+                                            p {
+                                                color: $mainWord_2;
+                                                font-size: 18px;
+                                                font-weight: bold;
+                                                text-align: center;
+                                            }
+
+                                            div {
+                                                width: 100%;
+                                                height: 100%;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+
+                                                span {
+                                                    width: 52px;
+                                                    height: 52px;
+                                                    @include ballBtn;
+                                                    font-size: 25px;
+                                                    margin: 0 20px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        //獎金列
+                        .pointBox {
+                            width: 100%;
+                            height: auto;
+                            margin-top: 16px;
+
+                            table {
+                                width: 100%;
+                                height: auto;
+                                background: $info_innerBG2;
+                                border-radius: 5px 5px 0 0;
+                                box-shadow: 0 0 0 1px $mainBorder_1,0 2px 10px 0 $info_Shadow;
+                                overflow: hidden;
+
+                                tr {
+                                    width: 100%;
+                                    height: 40px;
+
+                                    &:first-child {
+                                        background: $home_TitleBG;
+                                    }
+
+                                    &:last-child {
+
+                                        td {
+                                            border-bottom: none;
+                                        }
+                                    }
+
+                                    th {
+                                        background: transparent;
+                                        vertical-align: middle;
+
+                                        p {
+                                            color: $home_Title;
+                                            font-size: 20px;
+                                            font-weight: bold;
+                                        }
+                                    }
+
+                                    td {
+                                        width: 12%;
+                                        border-style: solid;
+                                        border-width: 0 1px 1px 0;
+                                        border-color: $mainBorder_1;
+                                        box-sizing: border-box;
+                                        vertical-align: middle;
+
+                                        &.big {
+                                            width: 18%;
+                                            border-bottom: none;
+                                        }
+                                        &.word {
+                                            width: 16%;
+                                        }
+
+                                        &:last-child {
+                                            border-right: none;
+                                        }
+
+                                        p {
+                                            color: $mainWord_2;
+                                            font-size: 17px;
+                                            font-weight: bold;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                //查看更多
+                .more {
+                    width: 154px;
+                    height: 35px;
+                    @include yellowBtn;
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 25px auto;
+
+                    &.display {
+                        display: flex;
+                    }
+
+                    &.close {
+
+                        i {
+                            transform: scaleY(-1);
+                        }
+                    }
+
+                    i {
+                        display: block;
+                        width: 11px;
+                        height: 11px;
+                        margin-left: 8px;
+                    }
+                }
+            }
+
+            //最下字
+            .bottomWord {
+                width: 100%;
+                color: $info_BottomWord;
+                font-size: 15px;
+                font-weight: bold;
+                text-align: center;
+                margin: 20px 0;
+            }
+        }
+    }
+}
+//背景
+.info_BG {
+    width: 100%;
+    min-width: 1000px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1205px 0;
+    overflow: hidden;
+    z-index: 2;
+
+    .topBg {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .ribbon1 {
+            width: 762px;
+            height: 465px;
+            position: absolute;
+            top: -20px;
+            left: -175px;
+            animation: ribbon_1 10s linear infinite;
+            @keyframes  ribbon_1 {
+                0% {
+                    transform: rotate3d(1, 1, 1, 0deg);
+                }
+                10% {
+                    transform: rotate3d(1, 1, 0, 80deg);
+                }
+                40% {
+                    transform: rotate3d(1, 1, 1, 60deg)scale(0.9);
+                }
+                80% {
+                    transform: rotate3d(1, 0, 1, 30deg)scale(1.2);
+                }
+                100% {
+                    transform: rotate3d(0, 0, 1, 360deg);
+                }
+            }
+        }
+        .ribbon2 {
+            width: 212px;
+            height: 479px;
+            position: absolute;
+            top: -45px;
+            left: 475px;
+            animation: ribbon_2 12s linear infinite;
+            @keyframes  ribbon_2 {
+                0% {
+                    transform: rotate3d(1, 1, 1, 0deg);
+                }
+                30% {
+                    transform: rotate3d(1, 1, 0, -80deg)scale(1.2);
+                }
+                50% {
+                    transform: rotate3d(1, 1, 1, 60deg);
+                }
+                70% {
+                    transform: rotate3d(1, 0, 1, -30deg)scale(0.9);
+                }
+                100% {
+                    transform: rotate3d(0, 0, 1, 360deg);
+                }
+            }
+        }
+        .ribbon3 {
+            width: 352px;
+            height: 442px;
+            position: absolute;
+            top: -27px;
+            left: 1220px;
+            animation: ribbon_3 12s linear infinite;
+            @keyframes  ribbon_3 {
+                0% {
+                    transform: rotate3d(1, 1, 1, 0deg);
+                }
+                20% {
+                    transform: rotate3d(1, 1, 0, -360deg) scale(2);
+                }
+                60% {
+                    transform: rotate3d(1, 1, 1, -20deg) scale(0.9);
+                }
+                90% {
+                    transform: rotate3d(1, 0, 1, -130deg) scale(1.2);
+                }
+                100% {
+                    transform: rotate3d(0, 0, 1, 0deg);
+                }
+            }
+        }
+        .ribbon4 {
+            width: 820px;
+            height: 393px;
+            position: absolute;
+            top: 80px;
+            right: -168px;
+            animation: ribbon_4 12s linear infinite;
+            @keyframes  ribbon_4 {
+                0% {
+                    transform: rotate3d(1, 1, 1, 0deg);
+                }
+                20% {
+                    transform: rotate3d(1, 1, 0, -160deg);
+                }
+                40% {
+                    transform: rotate3d(1, 1, 1, -60deg);
+                }
+                70% {
+                    transform: rotate3d(1, 0, 1, 130deg);
+                }
+                100% {
+                    transform: rotate3d(0, 0, 1, 0deg);
+                }
+            }
+        }
+        .ladder {
+            width: 526px;
+            height: 98px;
+            position: absolute;
+            top: 330px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: ladder 1s linear infinite;
+            @keyframes  ladder {
+                0% {
+                    transform: translate(-50%,0%);
+                }
+                20% {
+                    transform: translate(-50%,2%);
+                }
+                40% {
+                    transform: translate(-50%,1%);
+                }
+                70% {
+                    transform: translate(-50%,-1%);
+                }
+                100% {
+                    transform: translate(-50%,0%);
+                }
+            }
+        }
+    }
+    //獎池圖
+    .imgBox {
+        width: 945px;
+        height: 232px;
+        font-size: 0;
+        position: absolute;
+        top: 163px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 5;
+
+        .title {
+            width: 609px;
+            height: 169px;
+            position: absolute;
+            top: -143px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .battery {
+            width: 74px;
+            height: 192px;
+            position: absolute;
+            left: -13px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        ul {
+          width: 887px;
+          height: 104px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+          padding-right: 65px;
+          overflow: hidden;
+
+            li {
+                width: 48px;
+                height: 65px;
+                margin-left: 29.5px;
+                position: relative;
+                transform-origin: top;
+                filter:drop-shadow(0px 0px 3px #69fffd) contrast(200%);
+                z-index: 1;
+
+                &.num_0 {
+                    background-position-y: 0%;
+                }
+                &.num_1 {
+                    background-position-y: 10%;
+                }
+                &.num_2 {
+                    background-position-y: 20%;
+                }
+                &.num_3 {
+                    background-position-y: 30%;
+                }
+                &.num_4 {
+                    background-position-y: 40%;
+                }
+                &.num_5 {
+                    background-position-y: 50%;
+                }
+                &.num_6 {
+                    background-position-y: 60%;
+                }
+                &.num_7 {
+                    background-position-y: 70%;
+                }
+                &.num_8 {
+                    background-position-y: 80%;
+                }
+                &.num_9 {
+                    background-position-y: 90%;
+                    margin-right: 0.5px;
+                }
+                &.anime_1 {
+                    animation: numMove_1 2s ease-in-out 0s alternate-reverse infinite;
+                }
+
+                @keyframes numMove_1 {
+                    0% {
+                        background-position-y: 0%;
+                    }
+                    40% {
+                        background-position-y: 0%;
+                        transform: scaleY(0);
+                    }
+                    60% {
+                        background-position-y: 10%;
+                        transform: scaleY(0);
+                    }
+                    70% {
+                        background-position-y: 10%;
+                    }
+                    80% {
+                        background-position-y: 10%;
+                    }
+                    100% {
+                        background-position-y: 10%;
+                    }
+                }
+                // @keyframes numMove_2{
+                //     0% {
+                //         transform: rotateX(0deg);
+                //     }
+                //     20% {
+                //         transform: rotateX(0deg);
+                //     }
+                //     80% {
+                //         transform: rotateX(180deg) scaleY(-1);
+                //     }
+                //     100% {
+                //         transform: rotateX(180deg) scaleY(-1);
+                //     }
+                // }
+
+                .test {
+                    width: 60px;
+                    height: 104px;
+                    transform-style: preserve-3d;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    // animation: turn2 2s linear infinite;
+                    
+                    @keyframes turn2 {
+                        0% {
+                            transform: translate(-50%,-50%) rotate3d(1,0,0,0deg);
+                        }
+                        20% {
+                            transform: translate(-50%,-50%) rotate3d(1,0,0,0deg);
+                        }
+                        80% {
+                            transform: translate(-50%,-50%) rotate3d(1,0,0,360deg);
+                        }
+                        100% {
+                            transform: translate(-50%,-50%) rotate3d(1,0,0,360deg);
+                        }
+                    }
+                    .img {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        backface-visibility: inherit;
+                        font-size: 60px;
+                        color: #fff;
+                        filter: drop-shadow(0px 0px -10px #ffffff) contrast(200%);
+            
+                        &.img1 {
+                            background: rgba(0, 0, 0, 0.212);
+                            transform: translateZ(52px);
+                        }
+                        &.img2 {
+                            background: rgba(0, 0, 0, 0.199);
+                            transform: rotateY(180deg) translateZ(52px)scale(-1);
+                        }
+                        &.img3 {
+                            background: rgba(167, 167, 167, 0.637);
+                            transform: rotateX(90deg) translateZ(52px);
+                        }
+                        &.img4 {
+                            background: rgba(167, 167, 167, 0.637);
+                            transform: rotateX(-90deg) translateZ(52px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// .perspective {
+//     perspective: 3000px;
+//     position: absolute;
+//     top: 50px;
+//     left: 150px;
+//     z-index: 99;
+
+//     .test {
+//         width: 48px;
+//         height: 104px;
+//         transform-style: preserve-3d;
+//         animation: turn 2s linear infinite;
+//         @keyframes turn {
+//             0% {
+//                 transform: rotate3d(1,0,0,0deg);
+//             }
+//             100% {
+//                 transform: rotate3d(1,0,0,360deg);
+//             }
+//         }
+//         .img {
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             width: 100%;
+//             height: 100%;
+//             position: absolute;
+//             backface-visibility: inherit;
+//             font-size: 60px;
+//             color: #fff;
+
+//             &.img1 {
+//                 background: rgba(196, 196, 196, 0.7);
+//                 transform: translateZ(52px);
+//             }
+//             &.img2 {
+//                 background: rgba(148, 148, 148, 0.7);
+//                 transform: rotateY(180deg) translateZ(52px)scale(-1);
+//             }
+//             &.img3 {
+//                 background: rgba(161, 161, 161, 0.7);
+//                 transform: rotateX(90deg) translateZ(52px);
+                
+//             }
+//             &.img4 {
+//                 background: rgba(160, 160, 160, 0.7);
+//                 transform: rotateX(-90deg) translateZ(52px);
+//             }
+//         }
+//     }
+// }
+
+

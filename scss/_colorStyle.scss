@@ -1,0 +1,261 @@
+//BG
+$BG: #eaeaea;
+
+//主框線
+$mainBorder_1: #221f36;
+
+//主字色
+$mainWord_1: #272727;
+$mainWord_2: #000000;
+
+
+//個別區塊設定
+
+
+//header
+$header_BG: linear-gradient(to top,#2665c4 0%,#1d3e8d 100%);
+$header_Hover: linear-gradient(to bottom,#2665c4 0%,#1d3e8d 100%);
+$header_Word: #ffffff;
+$header_Border: #e3aa57;
+
+$header_Info_logoBG: linear-gradient(to top,#dadada 0%,#ffffff 100%);
+
+//home
+$home_BG: #e6e6e6;
+$home_innerBG: #f5f5f5;
+$home_OuterBorder: #ffffff;
+$home_Shadow: #0000002a;
+$home_TitleBG: linear-gradient(to right,#189ee4 0%,#0d4c94 15%,#1a296a 30%,#1a296a 57%,#8706bd 78% ,#1b3297 100%);
+$home_Title: #ffffff;
+
+$home_Account_WordBG: #d9d9d9;
+$home_Account_Word: #1c1c1c;
+
+$home_innerArea_BG: #ededed;
+$home_innerArea_SecondBG: #f7f7f7;
+$home_innerArea_ThirdBG: #fbbd00;
+$home_innerArea_ListBorder: #888888;
+$home_innerArea_SmallTitleBG: #dddddd;
+$home_innerArea_ChooseBG: #f3f3f3;
+$home_innerArea_ChooseBG_2: #9e021e;
+$home_innerArea_ChooseBaseBG: #b9b9b9;
+$home_innerArea_ChooseWord: #ffffff;
+$home_innerArea_ClearBG: #393433;
+$home_innerArea_RemindWord: #dd0101;
+
+$home_Single_TitleBG: #9b763f;
+
+$home_Easy_TitleBG: linear-gradient(to top,#644619 0%,#7c5d30 100%);
+
+//marquee
+$marquee_Title: #454545;
+$marquee_BG: #f5f5f5;
+$marquee_Border: #c59248;
+$marquee_Word: #242424;
+
+//info
+$info_BG: #3c3656;
+$info_innerBG: #221e36;
+$info_innerBG2: #ffffff;
+$info_Shadow: #00000042;
+$info_BottomWord: #ffffff;
+$info_Separate: #dd0101;
+
+$info_immediate_Title: #ffffff;
+
+//scrollbar
+@mixin scrollBar {
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #b6b6b6;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #444444;
+        border-radius: 10px;
+    }
+
+    overscroll-behavior: contain;
+}
+@mixin scrollBar_2 {
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: transparent;
+        border-radius: 10px;
+    }
+
+    overscroll-behavior: contain;
+}
+
+
+//button
+
+
+//單碰連碰按鈕
+@mixin borderBtn {
+    background: none;
+    border: solid 1px #ffffff;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: #ffffff;
+        border-color: #bb0023;
+        color: #272727;
+    }
+}
+//淺黃漸層按鈕
+@mixin yellowBtn {
+    background: linear-gradient(to top,#ff6633 0%,#ff9536 100%);
+    border-radius: 5px;
+    border: solid 1px #ffd4ad;
+    color: #fffefe;
+    font-size: 16px;
+    font-weight: bold;
+    filter: drop-shadow(0px 0px 10px #f96740) contrast(200%);
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom,#ff6633 0%,#ff9536 100%);
+    }
+}
+//白漸層按鈕
+@mixin whiteBtn {
+    background: linear-gradient(to top,#e0e0e0 0%,#ffffff 54%);
+    border-radius: 5px;
+    border: solid 1px #9c8966;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 10px;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom,#e0e0e0 0%,#ffffff 54%);
+    }
+}
+//虹漸層按鈕
+@mixin redBtn {
+    background: linear-gradient(to top,#2665c4 0%,#1d3e8d 100%);
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom,#2665c4 0%,#1d3e8d 100%);
+    }
+
+    &.time {
+
+        span {
+            display: flex;
+            background: #120910;
+            border-radius: 3px;
+            color: #ffcd61;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+$whiteBtn_Color2: #0325f2;
+$whiteBtn_Color3: #a00000;
+//彩球按鈕
+@mixin ballBtn {
+    background: linear-gradient(to bottom,#ffd71e 30%,#fb8800 100%);
+    border-radius: 50%;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2px;
+    user-select: none;
+}
+//清除按鈕
+@mixin clearBtn {
+    background: linear-gradient(to top,#e0e0e0 0%,#ffffff 54%);
+    border: solid 1px #755316;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 15px;
+        background: #d90000;
+    }
+    &::before {
+        transform: rotate(45deg);
+    }
+    &::after {
+        transform: rotate(-45deg);
+    }
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom,#e0e0e0 0%,#ffffff 54%);
+    }
+}
+
+
+//input
+
+
+//betAreaInput
+@mixin betInput {
+    background: none;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    pointer-events: none;
+
+    &.active {
+        background: #ffffff;
+        border: solid 1px #755316;
+        pointer-events: visible;
+    }
+}
+$betInput_ActiveColor: #e50000;
+//fastAreaInput
+@mixin fastInput {
+    background: #ffffff;
+    border: solid 1px #755316;
+    border-radius: 5px;
+    text-align: center;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:focus {
+        border: solid 2px #120c00;
+    }
+}
