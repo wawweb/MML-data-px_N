@@ -2228,6 +2228,7 @@ html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: none;
+  margin-bottom: 20px;
 }
 html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo.display {
   display: block;
