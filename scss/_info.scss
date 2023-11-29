@@ -24,29 +24,24 @@
             box-sizing: border-box;
             padding: 30px 0 20px;
             margin: 0 auto;
+            border-radius: 20px;
 
             .title {
-                width: 100%;
-                height: 45px;
+                width: 450px;
+                height: 52px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 position: relative;
-                margin-bottom: 20px;
+                margin: 0 auto 30px;
+                background: linear-gradient(to top, #0c4097 0%, #50f7ff 100%);
+                border: 1px solid #00c6f8;
+                border-radius: 25px;
 
-                .ornament {
-                    width: 213px;
-                    height: 49px;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%,-50%);
-                }
                 p {
                     color: $header_Word;
-                    font-size: 26px;
+                    font-size: 24px;
                     font-weight: bold;
-                    filter: drop-shadow(0px 0px 10px #ff8854) contrast(200%);
                 }
             }
 
@@ -54,23 +49,24 @@
             .immediateBox {
                 width: 850px;
                 height: auto;
-                background: $info_innerBG;
+                background: transparent;
                 box-shadow: 0 0 10px 2px $info_Shadow inset;
                 border: 0.1px solid $home_OuterBorder;
                 overflow: hidden;
                 margin: 0 auto 30px;
+                border-radius: 20px;
 
                 //即時回傳內容
                 .immInfo {
                     width: 100%;
                     height: auto;
                     box-sizing: border-box;
-                    padding: 0 16px;
+                    padding: 0 20px 0 40px;
 
                     //標頭
                     .name {
                         width: 100%;
-                        height: 50px;
+                        height: 70px;
                         display: flex;
                         align-items: center;
 
@@ -98,14 +94,15 @@
                     //內容
                     .betBox {
                         width: 100%;
-                        height: 695px;
+                        height: 550px;
                         margin-bottom: 20px;
+                        padding-right: 15px;
                         overflow-y: auto;
                         transition: 0.3s all;
                         @include scrollBar_2;
 
                         &.active {
-                            height: 1200px;
+                            height: 1000px;
                         }
 
                         ul {
@@ -114,11 +111,13 @@
 
                             li {
                                 width: 100%;
-                                height: 58px;
-                                background: $info_innerBG2;
+                                height: 45px;
+                                background: transparent;
                                 box-shadow: 0 1px 3px 0 $info_Shadow;
                                 display: flex;
-                                margin-bottom: 5px;
+                                margin-bottom: 10px;
+                                border: 1px solid #8b7bff;
+                                border-radius: 30px;
 
                                 &:last-child {
                                     margin: 0;
@@ -129,6 +128,7 @@
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
+                                    color: $mainWord_3;
 
                                     &:nth-of-type(1),
                                     &:nth-of-type(2) {
@@ -142,16 +142,17 @@
                                     }
 
                                     p {
-                                        color: $mainWord_2;
-                                        font-size: 20px;
+                                        color: $mainWord_3;
+                                        font-size: 16px;
                                         font-weight: bold;
                                     }
 
                                     span {
-                                        width: 45px;
-                                        height: 45px;
+                                        width: 26px;
+                                        height: 26px;
                                         @include ballBtn;
-                                        font-size: 23px;
+                                        font-size: 14px;
+                                        font-weight: bold;
                                         margin: 0 5px;
                                     }
                                 }
@@ -171,7 +172,7 @@
                         button {
                             width: auto;
                             min-width: 98px;
-                            height: 35px;
+                            height: 40px;
                             @include redBtn;
 
                             &.time {
@@ -184,8 +185,9 @@
                                 }
 
                                 span {
-                                    width: 46px;
-                                    height: 22px;
+                                    width: 30px;
+                                    height: 30px;
+                                    font-size: 16px
                                 }
                             }
 
@@ -219,16 +221,19 @@
             .lotteryBox {
                 width: 850px;
                 height: auto;
-                background: $info_innerBG;
+                background: transparent;
                 box-shadow: 0 0 10px 2px $info_Shadow inset;
                 border: 0.1px solid $home_OuterBorder;
+                border-radius: 20px;
                 overflow: hidden;
                 margin: 0 auto 30px;
+                padding-top: 10px;
 
                 .outerBox {
                     width: 100%;
                     height: 378px;
                     transition: 0.3s all;
+                    padding: 0 30px;
                     @include scrollBar_2;
 
                     &.active {
@@ -242,7 +247,6 @@
                         width: 100%;
                         height: auto;
                         box-sizing: border-box;
-                        padding: 0 16px;
                         display: none;
 
                         &.display {
@@ -253,8 +257,9 @@
                         .ballBox {
                             width: 100%;
                             height: auto;
-                            box-shadow: 0 2px 10px 0 $info_Shadow;
                             margin-top: 16px;
+                            box-shadow: 0 0 0 1px #ecb66d, 0 2px 10px 0 rgba(0, 0, 0, 0.2588235294);
+                            border-radius: 5px;
 
                             .smallTitle {
                                 width: 100%;
@@ -291,7 +296,7 @@
                                 table {
                                     width: 100%;
                                     height: auto;
-                                    background: $info_innerBG2;
+                                    background: transparent;
 
                                     tr {
                                         width: 100%;
@@ -366,8 +371,8 @@
                             table {
                                 width: 100%;
                                 height: auto;
-                                background: $info_innerBG2;
-                                border-radius: 5px 5px 0 0;
+                                background: transparent;
+                                border-radius: 5px;
                                 box-shadow: 0 0 0 1px $mainBorder_1,0 2px 10px 0 $info_Shadow;
                                 overflow: hidden;
 

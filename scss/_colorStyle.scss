@@ -2,11 +2,12 @@
 $BG: #eaeaea;
 
 //主框線
-$mainBorder_1: #221f36;
+$mainBorder_1: #ecb66d;
 
 //主字色
 $mainWord_1: #272727;
-$mainWord_2: #000000;
+$mainWord_2: #ffffff;
+$mainWord_3: #ffffff;
 
 
 //個別區塊設定
@@ -23,10 +24,10 @@ $header_Info_logoBG: linear-gradient(to top,#dadada 0%,#ffffff 100%);
 //home
 $home_BG: #e6e6e6;
 $home_innerBG: #f5f5f5;
-$home_OuterBorder: #ffffff;
+$home_OuterBorder: #00d5df;
 $home_Shadow: #0000002a;
-$home_TitleBG: linear-gradient(to right,#189ee4 0%,#0d4c94 15%,#1a296a 30%,#1a296a 57%,#8706bd 78% ,#1b3297 100%);
-$home_Title: #ffffff;
+$home_TitleBG: linear-gradient(to top,#c5502a 0%,#ff9672 100%);
+$home_Title: #000000;
 
 $home_Account_WordBG: #d9d9d9;
 $home_Account_Word: #1c1c1c;
@@ -54,7 +55,7 @@ $marquee_Border: #c59248;
 $marquee_Word: #242424;
 
 //info
-$info_BG: #3c3656;
+$info_BG: linear-gradient(to top,#1d0d20 0%,#231116 100%);
 $info_innerBG: #221e36;
 $info_innerBG2: #ffffff;
 $info_Shadow: #00000042;
@@ -90,11 +91,12 @@ $info_immediate_Title: #ffffff;
 
     &::-webkit-scrollbar-track {
         background: transparent;
+        border: 1px solid #8d3c675b;
         border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
-        background: transparent;
+        background: linear-gradient(to top,#0079e5 0%, #00f0ff 100%);
         border-radius: 10px;
     }
 
@@ -122,16 +124,15 @@ $info_immediate_Title: #ffffff;
 }
 //淺黃漸層按鈕
 @mixin yellowBtn {
-    background: linear-gradient(to top,#ff6633 0%,#ff9536 100%);
-    border-radius: 5px;
+    background: linear-gradient(to top,#c5502a 0%,#ff9672 100%);
+    border-radius: 25px;
     border: solid 1px #ffd4ad;
     color: #fffefe;
     font-size: 16px;
     font-weight: bold;
-    filter: drop-shadow(0px 0px 10px #f96740) contrast(200%);
 
     &:hover,&:active,&.active {
-        background: linear-gradient(to bottom,#ff6633 0%,#ff9536 100%);
+        background: linear-gradient(to bottom,#c5502a 0%,#ff9672 100%);
     }
 }
 //白漸層按鈕
@@ -150,28 +151,27 @@ $info_immediate_Title: #ffffff;
 }
 //虹漸層按鈕
 @mixin redBtn {
-    background: linear-gradient(to top,#2665c4 0%,#1d3e8d 100%);
-    border-radius: 5px;
-    border: 1px solid #ffffff;
+    background: linear-gradient(to top,#0064df 0%,#00f0ff 100%);
+    border-radius: 25px;
     color: #ffffff;
     font-size: 15px;
     font-weight: bold;
-    padding: 0 10px;
+    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 
     &:hover,&:active,&.active {
-        background: linear-gradient(to bottom,#2665c4 0%,#1d3e8d 100%);
+        background: linear-gradient(to bottom,#0064df 0%,#00f0ff 100%);
     }
 
     &.time {
 
         span {
             display: flex;
-            background: #120910;
-            border-radius: 3px;
-            color: #ffcd61;
+            background: #ffffff;
+            border-radius: 50%;
+            color: #000000;
             align-items: center;
             justify-content: center;
         }

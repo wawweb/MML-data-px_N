@@ -215,10 +215,12 @@ html body.info::-webkit-scrollbar {
 }
 html body.info::-webkit-scrollbar-track {
   background: transparent;
+  border: 1px solid rgba(141, 60, 103, 0.3568627451);
   border-radius: 10px;
 }
 html body.info::-webkit-scrollbar-thumb {
-  background: transparent;
+  background: -webkit-gradient(linear, left bottom, left top, from(#0079e5), to(#00f0ff));
+  background: linear-gradient(to top, #0079e5 0%, #00f0ff 100%);
   border-radius: 10px;
 }
 html body header {
@@ -372,7 +374,7 @@ html body .home article .content {
   height: auto;
   padding: 15px;
   background: #e6e6e6;
-  border: solid 1px #ffffff;
+  border: solid 1px #00d5df;
   -webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1647058824) inset;
           box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1647058824) inset;
 }
@@ -441,7 +443,7 @@ html body .home article .content .marqueeBox .marquee p {
 html body .home article .content .mainWrap {
   width: 100%;
   height: auto;
-  border: solid 1px #221f36;
+  border: solid 1px #ecb66d;
   margin-top: 10px;
 }
 html body .home article .content .mainWrap .top {
@@ -449,7 +451,7 @@ html body .home article .content .mainWrap .top {
   height: 45px;
   background: -webkit-gradient(linear, left bottom, left top, from(#2665c4), to(#1d3e8d));
   background: linear-gradient(to top, #2665c4 0%, #1d3e8d 100%);
-  border-bottom: solid 1px #221f36;
+  border-bottom: solid 1px #ecb66d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,7 +471,7 @@ html body .home article .content .mainWrap .top div {
 html body .home article .content .mainWrap .top div.left {
   width: 310px;
   height: 100%;
-  border-right: solid 1px #221f36;
+  border-right: solid 1px #ecb66d;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -508,7 +510,7 @@ html body .home article .content .mainWrap .mainBox {
 html body .home article .content .mainWrap .mainBox .left {
   width: 310px;
   height: auto;
-  border-right: solid 1px #221f36;
+  border-right: solid 1px #ecb66d;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -524,7 +526,7 @@ html body .home article .content .mainWrap .mainBox .left .account {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-bottom: solid 1px #221f36;
+  border-bottom: solid 1px #ecb66d;
 }
 html body .home article .content .mainWrap .mainBox .left .account .name {
   width: 110px;
@@ -563,7 +565,7 @@ html body .home article .content .mainWrap .mainBox .left .account .name .float 
   height: auto;
   background: #fbbd00;
   border-radius: 5px;
-  border: solid 1px #221f36;
+  border: solid 1px #ecb66d;
   -webkit-box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.1647058824);
           box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.1647058824);
   padding: 5px 10px;
@@ -573,13 +575,13 @@ html body .home article .content .mainWrap .mainBox .left .account .name .float 
           transform-origin: left bottom;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
-  color: #000000;
+  color: #ffffff;
 }
 html body .home article .content .mainWrap .mainBox .left .account i {
   display: block;
   width: 2px;
   height: 27px;
-  background: #221f36;
+  background: #ecb66d;
   margin: 0 10px;
 }
 html body .home article .content .mainWrap .mainBox .left .imgBox {
@@ -702,7 +704,7 @@ html body .home article .content .mainWrap .mainBox .left .betArea {
 html body .home article .content .mainWrap .mainBox .left .betArea .betWindow {
   width: 100%;
   height: auto;
-  border-top: solid 1px #221f36;
+  border-top: solid 1px #ecb66d;
 }
 html body .home article .content .mainWrap .mainBox .left .betArea .betWindow.moneyWindow.active .num {
   background: #fbbd00;
@@ -710,8 +712,8 @@ html body .home article .content .mainWrap .mainBox .left .betArea .betWindow.mo
 html body .home article .content .mainWrap .mainBox .left .betArea .betWindow .title {
   width: 100%;
   height: 28px;
-  background: -webkit-gradient(linear, left top, right top, from(#189ee4), color-stop(15%, #0d4c94), color-stop(30%, #1a296a), color-stop(57%, #1a296a), color-stop(78%, #8706bd), to(#1b3297));
-  background: linear-gradient(to right, #189ee4 0%, #0d4c94 15%, #1a296a 30%, #1a296a 57%, #8706bd 78%, #1b3297 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#c5502a), to(#ff9672));
+  background: linear-gradient(to top, #c5502a 0%, #ff9672 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -723,7 +725,7 @@ html body .home article .content .mainWrap .mainBox .left .betArea .betWindow .t
           justify-content: center;
 }
 html body .home article .content .mainWrap .mainBox .left .betArea .betWindow .title p {
-  color: #ffffff;
+  color: #000000;
   font-size: 14px;
   font-weight: bold;
 }
@@ -746,7 +748,7 @@ html body .home article .content .mainWrap .mainBox .left .betArea .betWindow ul
 html body .home article .content .mainWrap .mainBox .left .betArea .betWindow ul li p {
   width: 100%;
   height: 100%;
-  color: #000000;
+  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   display: -webkit-box;
@@ -813,19 +815,17 @@ html body .home article .content .mainWrap .mainBox .left .betArea .betWindow .b
 html body .home article .content .mainWrap .mainBox .left .betArea .betWindow .btnBox .nextBtn {
   width: 132px;
   height: 47px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ff6633), to(#ff9536));
-  background: linear-gradient(to top, #ff6633 0%, #ff9536 100%);
-  border-radius: 5px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#c5502a), to(#ff9672));
+  background: linear-gradient(to top, #c5502a 0%, #ff9672 100%);
+  border-radius: 25px;
   border: solid 1px #ffd4ad;
   color: #fffefe;
   font-size: 16px;
   font-weight: bold;
-  -webkit-filter: drop-shadow(0px 0px 10px #f96740) contrast(200%);
-          filter: drop-shadow(0px 0px 10px #f96740) contrast(200%);
 }
 html body .home article .content .mainWrap .mainBox .left .betArea .betWindow .btnBox .nextBtn:hover, html body .home article .content .mainWrap .mainBox .left .betArea .betWindow .btnBox .nextBtn:active, html body .home article .content .mainWrap .mainBox .left .betArea .betWindow .btnBox .nextBtn.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff6633), to(#ff9536));
-  background: linear-gradient(to bottom, #ff6633 0%, #ff9536 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#c5502a), to(#ff9672));
+  background: linear-gradient(to bottom, #c5502a 0%, #ff9672 100%);
 }
 html body .home article .content .mainWrap .mainBox .left .betArea .betWindow .btnBox button:not(.nextBtn) {
   width: auto;
@@ -864,13 +864,13 @@ html body .home article .content .mainWrap .mainBox .right .flexBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: solid 1px #221f36;
+  border-bottom: solid 1px #ecb66d;
 }
 html body .home article .content .mainWrap .mainBox .right .flexBox .fastArea {
   width: 220px;
   height: auto;
   background: #ededed;
-  border-right: solid 1px #221f36;
+  border-right: solid 1px #ecb66d;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -890,30 +890,28 @@ html body .home article .content .mainWrap .mainBox .right .flexBox .fastArea .c
 html body .home article .content .mainWrap .mainBox .right .flexBox .fastArea .change button {
   width: 140px;
   height: 40px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ff6633), to(#ff9536));
-  background: linear-gradient(to top, #ff6633 0%, #ff9536 100%);
-  border-radius: 5px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#c5502a), to(#ff9672));
+  background: linear-gradient(to top, #c5502a 0%, #ff9672 100%);
+  border-radius: 25px;
   border: solid 1px #ffd4ad;
   color: #fffefe;
   font-size: 16px;
   font-weight: bold;
-  -webkit-filter: drop-shadow(0px 0px 10px #f96740) contrast(200%);
-          filter: drop-shadow(0px 0px 10px #f96740) contrast(200%);
 }
 html body .home article .content .mainWrap .mainBox .right .flexBox .fastArea .change button:hover, html body .home article .content .mainWrap .mainBox .right .flexBox .fastArea .change button:active, html body .home article .content .mainWrap .mainBox .right .flexBox .fastArea .change button.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff6633), to(#ff9536));
-  background: linear-gradient(to bottom, #ff6633 0%, #ff9536 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#c5502a), to(#ff9672));
+  background: linear-gradient(to bottom, #c5502a 0%, #ff9672 100%);
 }
 html body .home article .content .mainWrap .mainBox .right .flexBox .fastArea .fastBox {
   width: 100%;
   height: auto;
-  border-top: solid 1px #221f36;
+  border-top: solid 1px #ecb66d;
 }
 html body .home article .content .mainWrap .mainBox .right .flexBox .fastArea .fastBox .title {
   width: 100%;
   height: 28px;
-  background: -webkit-gradient(linear, left top, right top, from(#189ee4), color-stop(15%, #0d4c94), color-stop(30%, #1a296a), color-stop(57%, #1a296a), color-stop(78%, #8706bd), to(#1b3297));
-  background: linear-gradient(to right, #189ee4 0%, #0d4c94 15%, #1a296a 30%, #1a296a 57%, #8706bd 78%, #1b3297 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#c5502a), to(#ff9672));
+  background: linear-gradient(to top, #c5502a 0%, #ff9672 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -925,7 +923,7 @@ html body .home article .content .mainWrap .mainBox .right .flexBox .fastArea .f
           justify-content: center;
 }
 html body .home article .content .mainWrap .mainBox .right .flexBox .fastArea .fastBox .title p {
-  color: #ffffff;
+  color: #000000;
   font-size: 14px;
   font-weight: bold;
 }
@@ -1048,15 +1046,15 @@ html body .home article .content .mainWrap .mainBox .right .flexBox .chooseArea 
 html body .home article .content .mainWrap .mainBox .right .flexBox .chooseArea .ballWrap {
   width: auto;
   height: auto;
-  border-right: solid 1px #221f36;
+  border-right: solid 1px #ecb66d;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
 html body .home article .content .mainWrap .mainBox .right .flexBox .chooseArea .ballWrap .title {
   width: auto;
   height: 28px;
-  background: -webkit-gradient(linear, left top, right top, from(#189ee4), color-stop(15%, #0d4c94), color-stop(30%, #1a296a), color-stop(57%, #1a296a), color-stop(78%, #8706bd), to(#1b3297));
-  background: linear-gradient(to right, #189ee4 0%, #0d4c94 15%, #1a296a 30%, #1a296a 57%, #8706bd 78%, #1b3297 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#c5502a), to(#ff9672));
+  background: linear-gradient(to top, #c5502a 0%, #ff9672 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1068,7 +1066,7 @@ html body .home article .content .mainWrap .mainBox .right .flexBox .chooseArea 
           justify-content: center;
 }
 html body .home article .content .mainWrap .mainBox .right .flexBox .chooseArea .ballWrap .title p {
-  color: #ffffff;
+  color: #000000;
   font-size: 14px;
   font-weight: bold;
 }
@@ -1208,7 +1206,7 @@ html body .home article .content .mainWrap .mainBox .right .flexBox .chooseArea 
   width: 60px;
   height: 100%;
   background: #f7f7f7;
-  border-right: solid 1px #221f36;
+  border-right: solid 1px #ecb66d;
   cursor: pointer;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -1225,8 +1223,8 @@ html body .home article .content .mainWrap .mainBox .right .flexBox .chooseArea 
 html body .home article .content .mainWrap .mainBox .right .flexBox .chooseArea .multiWrap ul li .title {
   width: 100%;
   height: 28px;
-  background: -webkit-gradient(linear, left top, right top, from(#189ee4), color-stop(15%, #0d4c94), color-stop(30%, #1a296a), color-stop(57%, #1a296a), color-stop(78%, #8706bd), to(#1b3297));
-  background: linear-gradient(to right, #189ee4 0%, #0d4c94 15%, #1a296a 30%, #1a296a 57%, #8706bd 78%, #1b3297 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#c5502a), to(#ff9672));
+  background: linear-gradient(to top, #c5502a 0%, #ff9672 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1238,7 +1236,7 @@ html body .home article .content .mainWrap .mainBox .right .flexBox .chooseArea 
           justify-content: center;
 }
 html body .home article .content .mainWrap .mainBox .right .flexBox .chooseArea .multiWrap ul li .title p {
-  color: #ffffff;
+  color: #000000;
   font-size: 14px;
   font-weight: bold;
 }
@@ -1282,13 +1280,13 @@ html body .home article .content .mainWrap .mainBox .right .singleBox .singleWra
   width: 100%;
   height: auto;
   background: #f3f3f3;
-  border-right: solid 1px #221f36;
+  border-right: solid 1px #ecb66d;
 }
 html body .home article .content .mainWrap .mainBox .right .singleBox .singleWrap .title {
   width: auto;
   height: 28px;
-  background: -webkit-gradient(linear, left top, right top, from(#189ee4), color-stop(15%, #0d4c94), color-stop(30%, #1a296a), color-stop(57%, #1a296a), color-stop(78%, #8706bd), to(#1b3297));
-  background: linear-gradient(to right, #189ee4 0%, #0d4c94 15%, #1a296a 30%, #1a296a 57%, #8706bd 78%, #1b3297 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#c5502a), to(#ff9672));
+  background: linear-gradient(to top, #c5502a 0%, #ff9672 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1300,14 +1298,14 @@ html body .home article .content .mainWrap .mainBox .right .singleBox .singleWra
           justify-content: center;
 }
 html body .home article .content .mainWrap .mainBox .right .singleBox .singleWrap .title p {
-  color: #ffffff;
+  color: #000000;
   font-size: 14px;
   font-weight: bold;
 }
 html body .home article .content .mainWrap .mainBox .right .singleBox .singleWrap .topList {
   width: 100%;
   height: 70px;
-  border-bottom: solid 1px #221f36;
+  border-bottom: solid 1px #ecb66d;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
@@ -1397,7 +1395,7 @@ html body .home article .content .mainWrap .mainBox .right .singleBox .singleWra
 html body .home article .content .mainWrap .mainBox .right .singleBox .singleWrap .betBox .betList {
   width: 100%;
   height: auto;
-  border: solid 1px #221f36;
+  border: solid 1px #ecb66d;
 }
 html body .home article .content .mainWrap .mainBox .right .singleBox .singleWrap .betBox .betList .smallTitle {
   width: 100%;
@@ -1410,8 +1408,8 @@ html body .home article .content .mainWrap .mainBox .right .singleBox .singleWra
   width: 12.5%;
   height: 100%;
   background: #9b763f;
-  border-right: solid 1px #221f36;
-  color: #ffffff;
+  border-right: solid 1px #ecb66d;
+  color: #000000;
   font-size: 15px;
   font-weight: bold;
   display: -webkit-box;
@@ -1471,14 +1469,14 @@ html body .home article .content .mainWrap .mainBox .right .singleBox .singleWra
 }
 html body .home article .content .mainWrap .mainBox .right .singleBox .singleWrap .betBox .betList .listBox li.smallTitle p {
   background: #9b763f;
-  border-color: #221f36;
-  color: #ffffff;
+  border-color: #ecb66d;
+  color: #000000;
 }
 html body .home article .content .mainWrap .mainBox .right .singleBox .singleWrap .betBox .betList .listBox li p {
   width: 12.5%;
   height: 100%;
   border-right: solid 1px #888888;
-  color: #000000;
+  color: #ffffff;
   font-size: 15px;
   font-weight: bold;
   display: -webkit-box;
@@ -1566,12 +1564,12 @@ html body .home article .content .mainWrap .mainBox .right .easyBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: solid 1px #221f36;
+  border-bottom: solid 1px #ecb66d;
 }
 html body .home article .content .mainWrap .mainBox .right .easyBox .leftBox {
   width: 50%;
   height: auto;
-  border-right: solid 1px #221f36;
+  border-right: solid 1px #ecb66d;
 }
 html body .home article .content .mainWrap .mainBox .right .easyBox .leftBox ul {
   width: 100%;
@@ -1589,10 +1587,10 @@ html body .home article .content .mainWrap .mainBox .right .easyBox .leftBox ul 
 }
 html body .home article .content .mainWrap .mainBox .right .easyBox .leftBox ul li.smallTitle label {
   height: 28px;
-  background: -webkit-gradient(linear, left top, right top, from(#189ee4), color-stop(15%, #0d4c94), color-stop(30%, #1a296a), color-stop(57%, #1a296a), color-stop(78%, #8706bd), to(#1b3297));
-  background: linear-gradient(to right, #189ee4 0%, #0d4c94 15%, #1a296a 30%, #1a296a 57%, #8706bd 78%, #1b3297 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#c5502a), to(#ff9672));
+  background: linear-gradient(to top, #c5502a 0%, #ff9672 100%);
   border-width: 0 1px 0 0;
-  border-color: #221f36;
+  border-color: #ecb66d;
 }
 html body .home article .content .mainWrap .mainBox .right .easyBox .leftBox ul li label {
   width: 11%;
@@ -1625,13 +1623,13 @@ html body .home article .content .mainWrap .mainBox .right .easyBox .leftBox ul 
       flex-shrink: 0;
   background: -webkit-gradient(linear, left bottom, left top, from(#644619), to(#7c5d30));
   background: linear-gradient(to top, #644619 0%, #7c5d30 100%);
-  border-bottom: solid 1px #221f36;
+  border-bottom: solid 1px #ecb66d;
 }
 html body .home article .content .mainWrap .mainBox .right .easyBox .leftBox ul li label:last-child {
   border-right: none;
 }
 html body .home article .content .mainWrap .mainBox .right .easyBox .leftBox ul li label p {
-  color: #ffffff;
+  color: #000000;
   font-size: 16px;
   font-weight: bold;
 }
@@ -1667,9 +1665,9 @@ html body .home article .content .mainWrap .mainBox .right .easyBox .leftBox ul 
 html body .home article .content .mainWrap .mainBox .right .easyBox .leftBox .title {
   width: 100%;
   height: 28px;
-  background: -webkit-gradient(linear, left top, right top, from(#189ee4), color-stop(15%, #0d4c94), color-stop(30%, #1a296a), color-stop(57%, #1a296a), color-stop(78%, #8706bd), to(#1b3297));
-  background: linear-gradient(to right, #189ee4 0%, #0d4c94 15%, #1a296a 30%, #1a296a 57%, #8706bd 78%, #1b3297 100%);
-  border-top: solid 1px #221f36;
+  background: -webkit-gradient(linear, left bottom, left top, from(#c5502a), to(#ff9672));
+  background: linear-gradient(to top, #c5502a 0%, #ff9672 100%);
+  border-top: solid 1px #ecb66d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1681,7 +1679,7 @@ html body .home article .content .mainWrap .mainBox .right .easyBox .leftBox .ti
           justify-content: center;
 }
 html body .home article .content .mainWrap .mainBox .right .easyBox .leftBox .title p {
-  color: #ffffff;
+  color: #000000;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 5px;
@@ -1783,7 +1781,7 @@ html body .home article .content .mainWrap .mainBox .right .easyBox .rightBox .t
           justify-content: center;
 }
 html body .home article .content .mainWrap .mainBox .right .easyBox .rightBox .title p {
-  color: #ffffff;
+  color: #000000;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 5px;
@@ -1839,7 +1837,7 @@ html body .home article .content .mainWrap .mainBox .right .easyBox .rightBox ul
   width: 60px;
   height: 100%;
   background: #f7f7f7;
-  border-right: solid 1px #221f36;
+  border-right: solid 1px #ecb66d;
   cursor: pointer;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -1854,8 +1852,8 @@ html body .home article .content .mainWrap .mainBox .right .easyBox .rightBox ul
   color: #ffffff;
 }
 html body .home article .content .mainWrap .mainBox .right .easyBox .rightBox ul li .title {
-  background: -webkit-gradient(linear, left top, right top, from(#189ee4), color-stop(15%, #0d4c94), color-stop(30%, #1a296a), color-stop(57%, #1a296a), color-stop(78%, #8706bd), to(#1b3297));
-  background: linear-gradient(to right, #189ee4 0%, #0d4c94 15%, #1a296a 30%, #1a296a 57%, #8706bd 78%, #1b3297 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#c5502a), to(#ff9672));
+  background: linear-gradient(to top, #c5502a 0%, #ff9672 100%);
 }
 html body .home article .content .mainWrap .mainBox .right .easyBox .rightBox ul li .title p {
   letter-spacing: 0;
@@ -1905,8 +1903,9 @@ html body .infoWrap article {
 html body .infoWrap article .content {
   width: 1000px;
   height: auto;
-  background: #3c3656;
-  border: 1px solid #ffffff;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1d0d20), to(#231116));
+  background: linear-gradient(to top, #1d0d20 0%, #231116 100%);
+  border: 1px solid #00d5df;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2588235294);
           box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2588235294);
@@ -1914,10 +1913,11 @@ html body .infoWrap article .content {
           box-sizing: border-box;
   padding: 30px 0 20px;
   margin: 0 auto;
+  border-radius: 20px;
 }
 html body .infoWrap article .content .title {
-  width: 100%;
-  height: 45px;
+  width: 450px;
+  height: 52px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1928,44 +1928,38 @@ html body .infoWrap article .content .title {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  margin-bottom: 20px;
-}
-html body .infoWrap article .content .title .ornament {
-  width: 213px;
-  height: 49px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin: 0 auto 30px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#0c4097), to(#50f7ff));
+  background: linear-gradient(to top, #0c4097 0%, #50f7ff 100%);
+  border: 1px solid #00c6f8;
+  border-radius: 25px;
 }
 html body .infoWrap article .content .title p {
   color: #ffffff;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: bold;
-  -webkit-filter: drop-shadow(0px 0px 10px #ff8854) contrast(200%);
-          filter: drop-shadow(0px 0px 10px #ff8854) contrast(200%);
 }
 html body .infoWrap article .content .immediateBox {
   width: 850px;
   height: auto;
-  background: #221e36;
+  background: transparent;
   -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2588235294) inset;
           box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2588235294) inset;
-  border: 0.1px solid #ffffff;
+  border: 0.1px solid #00d5df;
   overflow: hidden;
   margin: 0 auto 30px;
+  border-radius: 20px;
 }
 html body .infoWrap article .content .immediateBox .immInfo {
   width: 100%;
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 16px;
+  padding: 0 20px 0 40px;
 }
 html body .infoWrap article .content .immediateBox .immInfo .name {
   width: 100%;
-  height: 50px;
+  height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1993,8 +1987,9 @@ html body .infoWrap article .content .immediateBox .immInfo .name li:nth-of-type
 }
 html body .infoWrap article .content .immediateBox .immInfo .betBox {
   width: 100%;
-  height: 695px;
+  height: 550px;
   margin-bottom: 20px;
+  padding-right: 15px;
   overflow-y: auto;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
@@ -2007,14 +2002,16 @@ html body .infoWrap article .content .immediateBox .immInfo .betBox::-webkit-scr
 }
 html body .infoWrap article .content .immediateBox .immInfo .betBox::-webkit-scrollbar-track {
   background: transparent;
+  border: 1px solid rgba(141, 60, 103, 0.3568627451);
   border-radius: 10px;
 }
 html body .infoWrap article .content .immediateBox .immInfo .betBox::-webkit-scrollbar-thumb {
-  background: transparent;
+  background: -webkit-gradient(linear, left bottom, left top, from(#0079e5), to(#00f0ff));
+  background: linear-gradient(to top, #0079e5 0%, #00f0ff 100%);
   border-radius: 10px;
 }
 html body .infoWrap article .content .immediateBox .immInfo .betBox.active {
-  height: 1200px;
+  height: 1000px;
 }
 html body .infoWrap article .content .immediateBox .immInfo .betBox ul {
   width: 100%;
@@ -2022,14 +2019,16 @@ html body .infoWrap article .content .immediateBox .immInfo .betBox ul {
 }
 html body .infoWrap article .content .immediateBox .immInfo .betBox ul li {
   width: 100%;
-  height: 58px;
-  background: #ffffff;
+  height: 45px;
+  background: transparent;
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2588235294);
           box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2588235294);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #8b7bff;
+  border-radius: 30px;
 }
 html body .infoWrap article .content .immediateBox .immInfo .betBox ul li:last-child {
   margin: 0;
@@ -2045,6 +2044,7 @@ html body .infoWrap article .content .immediateBox .immInfo .betBox ul li div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: #ffffff;
 }
 html body .infoWrap article .content .immediateBox .immInfo .betBox ul li div:nth-of-type(1), html body .infoWrap article .content .immediateBox .immInfo .betBox ul li div:nth-of-type(2) {
   width: 20%;
@@ -2056,13 +2056,13 @@ html body .infoWrap article .content .immediateBox .immInfo .betBox ul li div:nt
   width: 40%;
 }
 html body .infoWrap article .content .immediateBox .immInfo .betBox ul li div p {
-  color: #000000;
-  font-size: 20px;
+  color: #ffffff;
+  font-size: 16px;
   font-weight: bold;
 }
 html body .infoWrap article .content .immediateBox .immInfo .betBox ul li div span {
-  width: 45px;
-  height: 45px;
+  width: 26px;
+  height: 26px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #ffd71e), to(#fb8800));
   background: linear-gradient(to bottom, #ffd71e 30%, #fb8800 100%);
   border-radius: 50%;
@@ -2083,7 +2083,8 @@ html body .infoWrap article .content .immediateBox .immInfo .betBox ul li div sp
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  font-size: 23px;
+  font-size: 14px;
+  font-weight: bold;
   margin: 0 5px;
 }
 html body .infoWrap article .content .immediateBox .immInfo .btnBox {
@@ -2101,15 +2102,14 @@ html body .infoWrap article .content .immediateBox .immInfo .btnBox {
 html body .infoWrap article .content .immediateBox .immInfo .btnBox button {
   width: auto;
   min-width: 98px;
-  height: 35px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#2665c4), to(#1d3e8d));
-  background: linear-gradient(to top, #2665c4 0%, #1d3e8d 100%);
-  border-radius: 5px;
-  border: 1px solid #ffffff;
+  height: 40px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#0064df), to(#00f0ff));
+  background: linear-gradient(to top, #0064df 0%, #00f0ff 100%);
+  border-radius: 25px;
   color: #ffffff;
   font-size: 15px;
   font-weight: bold;
-  padding: 0 10px;
+  padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2121,16 +2121,16 @@ html body .infoWrap article .content .immediateBox .immInfo .btnBox button {
           justify-content: center;
 }
 html body .infoWrap article .content .immediateBox .immInfo .btnBox button:hover, html body .infoWrap article .content .immediateBox .immInfo .btnBox button:active, html body .infoWrap article .content .immediateBox .immInfo .btnBox button.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#2665c4), to(#1d3e8d));
-  background: linear-gradient(to bottom, #2665c4 0%, #1d3e8d 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#0064df), to(#00f0ff));
+  background: linear-gradient(to bottom, #0064df 0%, #00f0ff 100%);
 }
 html body .infoWrap article .content .immediateBox .immInfo .btnBox button.time span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #120910;
-  border-radius: 3px;
-  color: #ffcd61;
+  background: #ffffff;
+  border-radius: 50%;
+  color: #000000;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2145,19 +2145,18 @@ html body .infoWrap article .content .immediateBox .immInfo .btnBox button.time 
   margin: 0 8px;
 }
 html body .infoWrap article .content .immediateBox .immInfo .btnBox button.time span {
-  width: 46px;
-  height: 22px;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
 }
 html body .infoWrap article .content .immediateBox .immInfo .btnBox button.more {
-  background: -webkit-gradient(linear, left bottom, left top, from(#ff6633), to(#ff9536));
-  background: linear-gradient(to top, #ff6633 0%, #ff9536 100%);
-  border-radius: 5px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#c5502a), to(#ff9672));
+  background: linear-gradient(to top, #c5502a 0%, #ff9672 100%);
+  border-radius: 25px;
   border: solid 1px #ffd4ad;
   color: #fffefe;
   font-size: 16px;
   font-weight: bold;
-  -webkit-filter: drop-shadow(0px 0px 10px #f96740) contrast(200%);
-          filter: drop-shadow(0px 0px 10px #f96740) contrast(200%);
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -2165,8 +2164,8 @@ html body .infoWrap article .content .immediateBox .immInfo .btnBox button.more 
   display: none;
 }
 html body .infoWrap article .content .immediateBox .immInfo .btnBox button.more:hover, html body .infoWrap article .content .immediateBox .immInfo .btnBox button.more:active, html body .infoWrap article .content .immediateBox .immInfo .btnBox button.more.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff6633), to(#ff9536));
-  background: linear-gradient(to bottom, #ff6633 0%, #ff9536 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#c5502a), to(#ff9672));
+  background: linear-gradient(to bottom, #c5502a 0%, #ff9672 100%);
 }
 html body .infoWrap article .content .immediateBox .immInfo .btnBox button.more.display {
   display: -webkit-box;
@@ -2186,18 +2185,21 @@ html body .infoWrap article .content .immediateBox .immInfo .btnBox button.more 
 html body .infoWrap article .content .lotteryBox {
   width: 850px;
   height: auto;
-  background: #221e36;
+  background: transparent;
   -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2588235294) inset;
           box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2588235294) inset;
-  border: 0.1px solid #ffffff;
+  border: 0.1px solid #00d5df;
+  border-radius: 20px;
   overflow: hidden;
   margin: 0 auto 30px;
+  padding-top: 10px;
 }
 html body .infoWrap article .content .lotteryBox .outerBox {
   width: 100%;
   height: 378px;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+  padding: 0 30px;
   -ms-scroll-chaining: none;
       overscroll-behavior: contain;
 }
@@ -2207,10 +2209,12 @@ html body .infoWrap article .content .lotteryBox .outerBox::-webkit-scrollbar {
 }
 html body .infoWrap article .content .lotteryBox .outerBox::-webkit-scrollbar-track {
   background: transparent;
+  border: 1px solid rgba(141, 60, 103, 0.3568627451);
   border-radius: 10px;
 }
 html body .infoWrap article .content .lotteryBox .outerBox::-webkit-scrollbar-thumb {
-  background: transparent;
+  background: -webkit-gradient(linear, left bottom, left top, from(#0079e5), to(#00f0ff));
+  background: linear-gradient(to top, #0079e5 0%, #00f0ff 100%);
   border-radius: 10px;
 }
 html body .infoWrap article .content .lotteryBox .outerBox.active {
@@ -2223,7 +2227,6 @@ html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo {
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 16px;
   display: none;
 }
 html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo.display {
@@ -2232,15 +2235,16 @@ html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo.display {
 html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .ballBox {
   width: 100%;
   height: auto;
-  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2588235294);
-          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2588235294);
   margin-top: 16px;
+  -webkit-box-shadow: 0 0 0 1px #ecb66d, 0 2px 10px 0 rgba(0, 0, 0, 0.2588235294);
+          box-shadow: 0 0 0 1px #ecb66d, 0 2px 10px 0 rgba(0, 0, 0, 0.2588235294);
+  border-radius: 5px;
 }
 html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .ballBox .smallTitle {
   width: 100%;
   height: 45px;
-  background: -webkit-gradient(linear, left top, right top, from(#189ee4), color-stop(15%, #0d4c94), color-stop(30%, #1a296a), color-stop(57%, #1a296a), color-stop(78%, #8706bd), to(#1b3297));
-  background: linear-gradient(to right, #189ee4 0%, #0d4c94 15%, #1a296a 30%, #1a296a 57%, #8706bd 78%, #1b3297 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#c5502a), to(#ff9672));
+  background: linear-gradient(to top, #c5502a 0%, #ff9672 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2254,7 +2258,7 @@ html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .ballBox .
   position: relative;
 }
 html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .ballBox .smallTitle p {
-  color: #ffffff;
+  color: #000000;
   font-size: 20px;
   font-weight: bold;
 }
@@ -2275,25 +2279,25 @@ html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .ballBox .
 html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .ballBox .lottoBox table {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: transparent;
 }
 html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .ballBox .lottoBox table tr {
   width: 100%;
   height: 65px;
-  border-bottom: solid 1px #221f36;
+  border-bottom: solid 1px #ecb66d;
 }
 html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .ballBox .lottoBox table tr:last-child {
   border: none;
 }
 html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .ballBox .lottoBox table tr th {
-  border-right: solid 1px #221f36;
+  border-right: solid 1px #ecb66d;
   vertical-align: middle;
 }
 html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .ballBox .lottoBox table tr th:last-child {
   border: none;
 }
 html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .ballBox .lottoBox table tr th p {
-  color: #000000;
+  color: #ffffff;
   font-size: 18px;
   font-weight: bold;
 }
@@ -2301,14 +2305,14 @@ html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .ballBox .
   margin-top: 5px;
 }
 html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .ballBox .lottoBox table tr td {
-  border-right: solid 1px #221f36;
+  border-right: solid 1px #ecb66d;
   vertical-align: middle;
 }
 html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .ballBox .lottoBox table tr td:last-child {
   border: none;
 }
 html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .ballBox .lottoBox table tr td p {
-  color: #000000;
+  color: #ffffff;
   font-size: 18px;
   font-weight: bold;
   text-align: center;
@@ -2360,10 +2364,10 @@ html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .pointBox 
 html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .pointBox table {
   width: 100%;
   height: auto;
-  background: #ffffff;
-  border-radius: 5px 5px 0 0;
-  -webkit-box-shadow: 0 0 0 1px #221f36, 0 2px 10px 0 rgba(0, 0, 0, 0.2588235294);
-          box-shadow: 0 0 0 1px #221f36, 0 2px 10px 0 rgba(0, 0, 0, 0.2588235294);
+  background: transparent;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 0 1px #ecb66d, 0 2px 10px 0 rgba(0, 0, 0, 0.2588235294);
+          box-shadow: 0 0 0 1px #ecb66d, 0 2px 10px 0 rgba(0, 0, 0, 0.2588235294);
   overflow: hidden;
 }
 html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .pointBox table tr {
@@ -2371,8 +2375,8 @@ html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .pointBox 
   height: 40px;
 }
 html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .pointBox table tr:first-child {
-  background: -webkit-gradient(linear, left top, right top, from(#189ee4), color-stop(15%, #0d4c94), color-stop(30%, #1a296a), color-stop(57%, #1a296a), color-stop(78%, #8706bd), to(#1b3297));
-  background: linear-gradient(to right, #189ee4 0%, #0d4c94 15%, #1a296a 30%, #1a296a 57%, #8706bd 78%, #1b3297 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#c5502a), to(#ff9672));
+  background: linear-gradient(to top, #c5502a 0%, #ff9672 100%);
 }
 html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .pointBox table tr:last-child td {
   border-bottom: none;
@@ -2382,7 +2386,7 @@ html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .pointBox 
   vertical-align: middle;
 }
 html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .pointBox table tr th p {
-  color: #ffffff;
+  color: #000000;
   font-size: 20px;
   font-weight: bold;
 }
@@ -2390,7 +2394,7 @@ html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .pointBox 
   width: 12%;
   border-style: solid;
   border-width: 0 1px 1px 0;
-  border-color: #221f36;
+  border-color: #ecb66d;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   vertical-align: middle;
@@ -2406,7 +2410,7 @@ html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .pointBox 
   border-right: none;
 }
 html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .pointBox table tr td p {
-  color: #000000;
+  color: #ffffff;
   font-size: 17px;
   font-weight: bold;
   text-align: center;
@@ -2414,15 +2418,13 @@ html body .infoWrap article .content .lotteryBox .outerBox .lottoInfo .pointBox 
 html body .infoWrap article .content .lotteryBox .more {
   width: 154px;
   height: 35px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ff6633), to(#ff9536));
-  background: linear-gradient(to top, #ff6633 0%, #ff9536 100%);
-  border-radius: 5px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#c5502a), to(#ff9672));
+  background: linear-gradient(to top, #c5502a 0%, #ff9672 100%);
+  border-radius: 25px;
   border: solid 1px #ffd4ad;
   color: #fffefe;
   font-size: 16px;
   font-weight: bold;
-  -webkit-filter: drop-shadow(0px 0px 10px #f96740) contrast(200%);
-          filter: drop-shadow(0px 0px 10px #f96740) contrast(200%);
   display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2433,8 +2435,8 @@ html body .infoWrap article .content .lotteryBox .more {
   margin: 25px auto;
 }
 html body .infoWrap article .content .lotteryBox .more:hover, html body .infoWrap article .content .lotteryBox .more:active, html body .infoWrap article .content .lotteryBox .more.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff6633), to(#ff9536));
-  background: linear-gradient(to bottom, #ff6633 0%, #ff9536 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#c5502a), to(#ff9672));
+  background: linear-gradient(to bottom, #c5502a 0%, #ff9672 100%);
 }
 html body .infoWrap article .content .lotteryBox .more.display {
   display: -webkit-box;
